@@ -1,5 +1,16 @@
-import 'package:meu_app/meu_app.dart' as meu_app;
+import '../lib/estagiario.dart';
+import '../lib/funcionario.dart';
+import '../lib/gerente.dart';
+import '../lib/vendedor.dart';
 
-void main(List<String> arguments) {
-  print('Hello world: ${meu_app.calculate()}!');
+void main() {
+  Funcionario gerente = Gerente("Nathalia", 3000, "Vendas");
+  Funcionario estagiario = Estagiario("Kevin", 800, "Marketing");
+  Funcionario vendedor= Vendedor("Eduarda", 1500, 1000 );
+
+
+  print(gerente.exibirInformacoes());
+  print(estagiario.exibirInformacoes());
+  print(vendedor.exibirInformacoes());
 }
+
